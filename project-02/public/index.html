@@ -20,16 +20,29 @@
                         <div class="col-md-9">
                             <form action="/">
                                 <input type="text" class="form-control" placeholder="Digite o nome do endereço e a url, separados por vírgula..." id="texto">
+                                <div class="col-md-3">
+                                    <button id="adicionar" class="btn btn-secondary btn-block" onclick="">Adicionar</button>                            
+                                </div>    
+                            
                             </form>                         
+                                                    
                         </div>
-                        <div class="col-md-3">
-                            <button class="btn btn-secondary btn-block" onclick="changeColor()">Adicionar</button>                            
-                        </div>                        
                     </div>
 
                     <ul>
                         <li>Nunca mais esqueça um endereço!</li>
                     </ul>
+
+                    <table>
+                        <thead>
+                            <th>Nome</th>
+                            <th>Url</th>
+                            <th>Operações</th>
+                        </thead>
+                        <tbody id="urls">
+                            
+                        </tbody>
+                    </table>
 
                 </div>
             </div>
