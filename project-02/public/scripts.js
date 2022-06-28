@@ -16,7 +16,7 @@ function addElement({ name, url }) {
     var item4 = document.createElement("button")
     item4.setAttribute("id", "botao_excluir")
     item4.setAttribute("value", contador)
-    item4.setAttribute("onclick", "removeElement()")
+    item4.setAttribute("onclick", "removeElement("+contador+")")
     item.setAttribute("id", contador)
     //item4.setAttribute("type", "button")
     //item4.setAttribute("value", "Excluir")
@@ -34,10 +34,11 @@ function addElement({ name, url }) {
     contador++
 }
 
-function removeElement(element) {
-    console.log(element.typeOf())
-    //const element = document.getElementById("demo");
-    //element.remove();
+function removeElement(id) {
+    //console.log(element.typeOf())
+    console.log(id);
+    const element = document.getElementById(id)
+    element.remove();
 }
 
 form.addEventListener('submit', (event) => {
